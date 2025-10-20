@@ -79,12 +79,85 @@
             font-size: 1.8rem;
         }
 
-        .intro-section {
+        .home-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .main-title {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .home-content {
             background: white;
             padding: 3rem;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: #34495e;
             margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .bio-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            align-items: start;
+        }
+
+        .bio-section.reverse {
+            direction: rtl;
+        }
+
+        .bio-section.reverse > * {
+            direction: ltr;
+        }
+
+        .bio-text p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .bio-image {
+            text-align: center;
+        }
+
+        .bio-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            margin-bottom: 0.5rem;
+        }
+
+        .image-caption {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .bio-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .main-title {
+                font-size: 2rem;
+            }
+
+            .tagline {
+                font-size: 1.2rem;
+            }
         }
 
         .research-item, .hobby-item {
@@ -216,16 +289,51 @@
     <div class="container">
         <!-- Home Page -->
         <div id="home" class="page active">
-            <div class="intro-section">
-                <h1>Welcome!</h1>
-                <p style="font-size: 1.1rem; line-height: 1.8;">
-                    Hello! I'm [Your Name], a [Your Position] at [Your Institution]. 
-                    This website showcases my research interests, academic work, and personal adventures.
-                </p>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 1rem;">
-                    Feel free to explore my research projects, download my CV, check out my national park adventures, 
-                    and learn more about my hobbies and interests.
-                </p>
+            <div class="home-header">
+                <h1 class="main-title">Hi there! I'm [Your Name]</h1>
+            </div>
+            
+            <div class="home-content">
+                <h2 class="tagline">[Your Research Tagline - e.g., "Exploring Evolution and Ecology"]</h2>
+                
+                <div class="bio-section">
+                    <div class="bio-text">
+                        <p>
+                            Write your first paragraph here. Introduce yourself, your current position, 
+                            and what drives your research. Make it personal and engaging - tell your story!
+                        </p>
+                        <p>
+                            Add more paragraphs about your background, where you're from, what got you 
+                            interested in your field, and your current work. Include personal details that 
+                            make your story unique and relatable.
+                        </p>
+                        <p>
+                            Mention your education, key experiences, and what you're working on now. 
+                            You can also hint at what drives you outside of research.
+                        </p>
+                    </div>
+                    <div class="bio-image">
+                        <img src="your-photo.jpg" alt="Your Name">
+                        <p class="image-caption">Caption for your photo</p>
+                    </div>
+                </div>
+
+                <div class="bio-section reverse">
+                    <div class="bio-text">
+                        <p>
+                            Continue your story here. Talk about your research journey, 
+                            collaborations, or what you hope to achieve in your field.
+                        </p>
+                        <p>
+                            You can add as many of these sections as you want. Each one can have 
+                            text on one side and an image on the other.
+                        </p>
+                    </div>
+                    <div class="bio-image">
+                        <img src="your-photo2.jpg" alt="Research photo">
+                        <p class="image-caption">Caption for second photo</p>
+                    </div>
+                </div>
             </div>
         </div>
 
