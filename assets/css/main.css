@@ -2279,10 +2279,11 @@ button,
 }
 
 /* Hover colors */
-.fa-butterfly:hover { color: #1DA1F2; }    /* Bluesky – blue */
+.fa-bluesky:hover { color: #1DA1F2; }    /* Bluesky – blue */
 .fa-leaf:hover      { color: #77B300; }    /* iNaturalist – green */
 .fa-github:hover    { color: #000000; }    /* GitHub – black */
 .fa-orcid:hover     { color: #7c3aed; }    /* ORCID – purple */
 .fa-envelope:hover  { color: #d9534f; }    /* Email – red */
+
 
 
