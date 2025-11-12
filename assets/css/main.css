@@ -113,11 +113,11 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #0097b1;
+  color: #33b8cc;
   text-decoration: none; }
   a:hover {
     border-bottom-color: #0097b1;
-    color: #0097b1 !important; }
+    color: #33b8cc !important; }
     a:hover strong {
       color: inherit; }
 
@@ -2215,7 +2215,7 @@ button,
     font-size: 0.9em;
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
-      color: #0097b1; }
+      color: #33b8cc; }
     #menu ul a.opener, #menu ul span.opener {
       -moz-transition: color 0.2s ease-in-out;
       -webkit-transition: color 0.2s ease-in-out;
@@ -2284,6 +2284,7 @@ button,
 .fa-github:hover    { color: #000000; }    /* GitHub – black */
 .fa-orcid:hover     { color: #7c3aed; }    /* ORCID – purple */
 .fa-envelope:hover  { color: #d9534f; }    /* Email – red */
+
 
 
 
