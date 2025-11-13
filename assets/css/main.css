@@ -1221,9 +1221,12 @@ input[type="radio"] + label:before {
     border-radius: 0.375em;
     display: block; }
   .image.left, .image.right {
-    max-width: 40%; }
+    max-width: 30%; }
     .image.left img, .image.right img {
-      width: 100%; }
+      width: 100%;
+	  height: auto;
+	  max-height: 350px;
+	  object-fit: cover; }
   .image.left {
     float: left;
     padding: 0 1.5em 1em 0;
@@ -2284,6 +2287,7 @@ button,
 .fa-github:hover    { color: #000000; }    /* GitHub – black */
 .fa-orcid:hover     { color: #7c3aed; }    /* ORCID – purple */
 .fa-envelope:hover  { color: #d9534f; }    /* Email – red */
+
 
 
 
