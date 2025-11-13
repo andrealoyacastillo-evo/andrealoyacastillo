@@ -2286,6 +2286,57 @@ button,
 .fa-envelope:hover  { color: #d9534f; }    /* Email – red */
 
 
+/* === Research layout: text left, gallery right === */
+
+.research-layout {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+/* Left column: text */
+.research-text {
+  flex: 2 1 60%;
+}
+
+/* Right column: gallery wall */
+.research-gallery {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Use existing .image styles but tighten them */
+.research-gallery .image {
+  margin: 0;
+}
+
+.research-gallery img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;   /* tweak 200–260px until you like it */
+  object-fit: cover;   /* keeps them neat, crops edges if needed */
+  border-radius: 0.375em;
+}
+
+/* Stack nicely on tablets/phones */
+@media screen and (max-width: 980px) {
+  .research-layout {
+    flex-direction: column;
+  }
+
+  .research-gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .research-gallery img {
+    max-height: none;
+  }
+}
+
 
 
 
