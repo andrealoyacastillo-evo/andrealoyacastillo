@@ -2361,6 +2361,11 @@ button,
   transform: translate(-50%, -100%) scale(1.2);
 }
 
+<!-- Test tree for Yosemite -->
+<a href="parks/yosemite.html" class="tree tree-yosemite">
+    <i class="fa-solid fa-tree"></i>
+</a>
+
 
 
 
