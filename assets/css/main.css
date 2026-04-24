@@ -3415,3 +3415,30 @@ input, select, textarea {
 #two .work-item a.image:hover::after {
   opacity: 1;
 }
+
+#two .work-item a.image::before {
+    content: "View";
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 2;
+
+    color: white;
+    font-weight: 600;
+    font-size: 0.9em;
+    line-height: 1;
+
+    padding: 0.6em 1.4em;
+    border: 2px solid rgba(255,255,255,0.9);
+    border-radius: 6px;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#two .work-item a.image:hover::before {
+    opacity: 1;
+}
