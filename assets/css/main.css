@@ -3464,3 +3464,20 @@ input, select, textarea {
   color: #ffffff !important;
   border-bottom-color: transparent;
 }
+
+#header nav {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+
+#header nav a {
+  margin-left: 1.2em;
+  font-size: 0.9em;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+#header nav a:hover {
+  color: white;
+}
