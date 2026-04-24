@@ -3451,3 +3451,16 @@ input, select, textarea {
 #two .work-item a.image {
     display: block;
 }
+
+.home-link {
+  display: inline-block;
+  margin-top: 1em;
+  color: rgba(255, 255, 255, 0.85);
+  border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+  font-size: 0.95em;
+}
+
+.home-link:hover {
+  color: #ffffff !important;
+  border-bottom-color: transparent;
+}
